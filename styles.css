@@ -1,0 +1,233 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav.mx-auto {
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand .logo {
+    height: 30px; 
+    margin-right: 10px;
+}
+
+
+section#beranda {
+    background: url('Img/pexels-fabianwiktor-994605.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+section#layanan {
+    background: url('') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+section#portofolio {
+    background: url('') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+section#tentangkami {
+    background: url('') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+section#kontakkami {
+    background: url('') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+
+main {
+    padding: 2rem;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section img {
+    display: block;
+    margin-top: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #11c95e;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.portfolio-item {
+    margin-bottom: 1.5rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+#contactForm {
+    width: 48%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+#messageContainer {
+    width: 48%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+#messageContainer h3 {
+    margin-top: 0;
+}
+
+#displayMessage {
+    white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+    #contactForm, #messageContainer {
+        width: 100%;
+    }
+}
+
+#messageContainer p {
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+}
+
+.btn-beranda {
+    background-color: #dc3545;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-beranda:hover {
+    background-color: #c82333; 
+    transform: scale(1.05); 
+}
+
+.btn-beranda:active {
+    background-color: #bd2130;
+    transform: scale(0.95); 
+}
+
+.btn-beranda:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); 
+}
+
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); 
+    transform: scale(1.1); 
+}
+
+#scrollToTopBtn svg {
+    fill: white; 
+}
+
+
